@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "931408575179",
+    "project_id": "rail-radar-india",
+    "storage_bucket": "rail-radar-india.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:931408575179:android:440b5d10624f039eae394e",
+        "android_client_info": {
+          "package_name": "com.example.rail_radar"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDlGeCkYySCK7IbM98VJw87sU-KqR2sYS4"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
