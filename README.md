@@ -1,6 +1,6 @@
 # Rail Radar
 
-*A Flutter-based mobile application for live, pan-India train tracking — inspired by FlightRadar24.*
+*A Flutter-based mobile app for live, pan-India train tracking — inspired by FlightRadar24 and RailRadar by Rail Journal.*
 
 ---
 
