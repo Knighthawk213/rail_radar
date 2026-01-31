@@ -29,11 +29,15 @@ class _MapScreenState extends State<MapScreen> {
       });
     });
 
-    _timer = Timer.periodic(const Duration(seconds: 2), (_) {
+    _timer = Timer.periodic(const Duration(seconds: 1), (_) async{
       final provider = context.read<TrainProvider>();
+
       if (provider.trains.isEmpty || route == null) return;
 
-      provider.moveTrainAlongRoute(provider.trains.first, route!);
+      await provider.moveSmoothly(
+          provider.trains.first,
+          route!,
+      );
     });
   }
   @override
@@ -82,6 +86,20 @@ class _MapScreenState extends State<MapScreen> {
                 },
             )
           ],
+      ),
+      floatingActionButton: Column(
+        mainAxisSize: MainAxisSize.min,
+        children: [
+          FloatingActionButton(heroTag: 'pause',
+              onPressed: () => context.read<TrainProvider>().pause(),
+          child: const Icon(Icons.pause),
+          ),
+          const SizedBox(height: 10,),
+          FloatingActionButton(heroTag: 'resume',
+              onPressed: () => context.read<TrainProvider>().resume(),
+            child: const Icon(Icons.play_arrow),
+          ),
+        ],
       ),
     );
   }
