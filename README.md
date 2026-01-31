@@ -1,24 +1,29 @@
 # Rail Radar
+**Rail Radar** is a Flutter-based mobile application for **live, pan-India train tracking**, inspired by flight tracking platforms like FlightRadar24 and the Rail Radar feature by Rail Journal.
 
-*A Flutter-based mobile app for live, pan-India train tracking — inspired by FlightRadar24 and RailRadar by Rail Journal.*
+Instead of searching for trains by number, Rail Radar focuses on **visual, map-based tracking**, allowing users to see trains moving live across India in a more intuitive and interactive way.
 
 ---
 
 ## Overview
 
-**Rail Radar** aims to visualize the **real-time movement of running trains across India** on an interactive map.  
-Instead of searching by train numbers, users can **see trains moving live**, making railway tracking more intuitive and visual.
+Rail Radar visualizes the **real-time movement of trains on an interactive map**, similar to how flight radar apps work for aviation.
 
-The project is currently under active development and focuses on building a scalable and performant foundation for real-time tracking.
+The goal of this project is to build a **scalable, performant foundation** for live railway tracking, with a strong emphasis on:
+- clean architecture  
+- real-time data handling  
+- smooth map-based animations  
 
+The project is currently under **active development**.
 ---
 
 ## Key Features (WIP)
 
 - Live tracking of running trains across India  
-- Interactive map with smooth pan and zoom  
-- Real-time location updates  
-- Train route visualization  
+- Interactive map with smooth pan & zoom  
+- Real-time location updates using Firebase  
+- Train route visualization with polylines  
+- Smooth, bidirectional train movement along routes  
 - Clean and responsive UI optimized for mobile devices  
 
 ---
@@ -38,11 +43,11 @@ The project is currently under active development and focuses on building a scal
 
 ## What I’m Learning Through This Project
 
-- Handling **real-time data streams**
-- Building **map-based UIs** in Flutter
-- State management for frequently updating data
-- Performance optimization for live location rendering
-- Structuring scalable Flutter applications
+- Handling **real-time data streams** with Firebase  
+- Designing **map-based UIs** in Flutter  
+- Managing **frequently updating state** efficiently  
+- Implementing **smooth movement & interpolation** for live tracking  
+- Structuring **scalable Flutter applications** with clean separation of concerns  
 
 ---
 
@@ -50,23 +55,25 @@ The project is currently under active development and focuses on building a scal
 
 This project is currently in the **development phase**.
 
-Planned next steps:
-- Improve accuracy and smoothness of live updates  
+### Planned Next Steps
+- Improve realism and smoothness of live movement  
 - Optimize map rendering for performance  
 - Add clustering for dense train routes  
 - Enhance UI/UX for better readability  
+- Secure Firestore access for production use  
 
 ---
 
 ## Screenshots
 
-> Screenshots and demo GIFs will be added once the MVP is ready.
+Screenshots and demo GIFs will be added once the **MVP** is finalized.
 
 ---
 
 ## Contributions
 
-This is a personal learning project, but suggestions and feedback are always welcome.
+This is a **personal learning project**, but suggestions, feedback, and discussions are always welcome.
+Feel free to open an issue, suggest improvements or just share ideas  
 
 ---
 
